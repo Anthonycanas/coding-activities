@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet" href = "style.css" type="text/css">
+    </head>
+    <body>
+        <p>Anthony's web page</p>
+        <div id = "button-div">
+            <button onclick= "changeColor()" class = 'btn btn-lg'>Click me</button>
+        </div>
+        <script>
+            var colors = ["red", "green", "blue", "orange"];
+            var index = 0;
+            function changeColor(){
+                document.body.style.backgroundColor=colors[index];
+                index = (index + 1) % 4;
+            }
+        </script>
+    </body>
+</html>
